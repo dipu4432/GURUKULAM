@@ -1,9 +1,9 @@
 import "./about.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import img1 from "../assets/images/about1.jpg";
-import img2 from "../assets/images/about2.jpg";
-import img3 from "../assets/images/about3.jpg";
-import img4 from "../assets/images/about4.jpg";
+import img1 from "../assets/images/ab1.png";
+import img2 from "../assets/images/ab2.png";
+import img3 from "../assets/images/ab3.png";
+import img4 from "../assets/images/ab4.png";
 
 function About() {
   const features = [
