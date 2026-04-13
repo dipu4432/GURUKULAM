@@ -1,12 +1,13 @@
-import React from 'react'
+import Banner from "./banner"
+import About from "./about"
 
-const Hone = () => {
+const Home = () => {
   return (
     <div>
-        <h1>Welcome to Gukulam</h1>
-        
+        <Banner />
+        <About />
     </div>
   )
 }
 
-export default Hone
+export default Home

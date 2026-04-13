@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="text-dark text-center py-3" style={{ backgroundColor: "#FE8D00"}}>
+    <footer className="text-dark text-center py-4" style={{ backgroundColor: "#FE8D00"}}>
       © Copyright <b>Helping Hands Technologies</b>. All rights reserved.
     </footer>
   )

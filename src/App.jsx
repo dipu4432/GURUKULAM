@@ -11,7 +11,6 @@ function App() {
 
       {/* Main content */}
       <div className="flex-grow-1">
-        {/* <h1 className="text-center mt-5">Main Content</h1> */}
         <HOME />
       </div>
 

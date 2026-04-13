@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <>
       {/* <Navbar expand="lg" className="py-4 shadow-sm" style={{ backgroundColor: "#FE8D00" }} fixed="top" > */}
-      <Navbar expand="lg" className="py-4 shadow-sm" style={{ backgroundColor: "#FE8D00" }} fixed="top" >
+      <Navbar expand="lg" className="py-2 shadow-sm" style={{ backgroundColor: "#FE8D00" }} >
         <Container>
           
           {/* Logo */}
