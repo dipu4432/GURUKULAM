@@ -1,0 +1,30 @@
+/* Increase brand name size */
+.navbar-brand {
+  font-size: 3rem !important;   /* desktop */
+  font-weight: 700;
+}
+
+/* Mobile responsive */
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 2rem !important;
+  }
+
+  .nav-mobile {
+    gap: 10px !important;
+  }
+
+  .nav-mobile .nav-link {
+    padding: 8px 0 !important;
+    font-size: 15px;
+  }
+
+  .navbar-collapse {
+    padding-top: 10px;
+  }
+
+  .navbar .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
