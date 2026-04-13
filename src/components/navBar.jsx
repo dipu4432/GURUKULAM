@@ -13,7 +13,7 @@ function NavBar() {
         <Container>
           
           {/* Logo */}
-          <Navbar.Brand className="fw-bold fs-16">
+          <Navbar.Brand>
             Gurukulam
           </Navbar.Brand>
 
