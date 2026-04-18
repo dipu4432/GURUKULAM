@@ -1,5 +1,6 @@
 import Banner from "./banner";
 import About from "./about";
+import Donate from "./donatePage"
 import Gaushala from "./gaushala";
 import Gallery from "./gallery";
 import Facility from "./facility";
@@ -13,6 +14,10 @@ const Home = () => {
 
       <section id="about">
         <About />
+      </section>
+
+      <section id="donate">
+        <Donate />
       </section>
 
       <section id="gaushala">
