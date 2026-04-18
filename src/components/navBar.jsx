@@ -5,17 +5,17 @@ import Button from "react-bootstrap/Button";
 import "./navBar.css";
 
 function NavBar() {
-
   return (
     <>
       {/* <Navbar expand="lg" className="py-4 shadow-sm" style={{ backgroundColor: "#FE8D00" }} fixed="top" > */}
-      <Navbar expand="lg" className="py-2 shadow-sm" style={{ backgroundColor: "#FE8D00" }} >
+      <Navbar
+        expand="lg"
+        className="py-2 shadow-sm"
+        style={{ backgroundColor: "#FE8D00" }}
+      >
         <Container>
-          
           {/* Logo */}
-          <Navbar.Brand>
-            Gurukulam
-          </Navbar.Brand>
+          <Navbar.Brand>Gurukulam</Navbar.Brand>
 
           {/* Toggle */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,11 +23,11 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto nav-mobile">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#home">About</Nav.Link>
-              <Nav.Link href="#home">Gaushala</Nav.Link>
-              <Nav.Link href="#home">Education</Nav.Link>
-              <Nav.Link href="#home">Gallery</Nav.Link>
-              <Nav.Link href="#home">Contact</Nav.Link>
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#gaushala">Gaushala</Nav.Link>
+              <Nav.Link href="#facility">Education</Nav.Link>
+              <Nav.Link href="#gallery">Gallery</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
 
             {/* Button */}
