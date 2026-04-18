@@ -1,11 +1,11 @@
 .facility-section {
   background: #f3f3f3;
-  padding: 75px 0;
+  padding: 45px 0;
 }
 
 .facility-header {
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .facility-header h2 {
@@ -50,7 +50,7 @@
 /* Responsive */
 @media (max-width: 991px) {
   .facility-section {
-    padding: 60px 0;
+    padding: 45px 0;
   }
 
   .facility-header h2 {
@@ -60,11 +60,11 @@
 
 @media (max-width: 768px) {
   .facility-section {
-    padding: 50px 0;
+    padding: 15px 0;
   }
 
   .facility-header {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .facility-header h2 {
