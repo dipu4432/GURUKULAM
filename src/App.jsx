@@ -8,6 +8,8 @@ import Vision from "./components/Vision";
 import WhyGurukulam from "./components/WhyGurukulam";
 import TrustBoards from "./components/TrustBoards";
 
+import Events from "./components/Events";
+
 function App() {
   return (
     <BrowserRouter>
@@ -30,6 +32,11 @@ function App() {
             <Route
               path="/trust-boards"
               element={<TrustBoards />}
+            />
+
+            <Route
+              path="/events"
+              element={<Events />}
             />
           </Routes>
         </div>

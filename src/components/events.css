@@ -1,0 +1,308 @@
+/* events.css */
+
+.events-section {
+  background: #fff;
+  padding-bottom: 80px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.events-header {
+  padding: 70px 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.events-header h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.events-header p {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.events-header span {
+  color: #d69a2d;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.events-topbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  height: 52px;
+  border-radius: 0;
+  padding-left: 42px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.find-btn {
+  background: #d6aa4d;
+  color: #fff;
+  border: none;
+  height: 52px;
+  padding: 0 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.find-btn:hover {
+  background: #be943d;
+}
+
+/* =========================
+   MONTH BAR
+========================= */
+
+.month-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.month-btn,
+.current-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 10px 16px;
+  font-size: 0.92rem;
+}
+
+.month-bar h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* =========================
+   NO EVENTS
+========================= */
+
+.no-events {
+  background: #f5f5f5;
+  padding: 18px;
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 60px;
+}
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.event-card {
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card .card-body {
+  padding: 28px;
+}
+
+.event-card h5 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.event-card span {
+  color: #d69a2d;
+  font-size: 0.92rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.event-card p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* =========================
+   PAST EVENTS
+========================= */
+
+.past-events h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.past-event-item {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 42px;
+}
+
+.event-date {
+  min-width: 55px;
+  text-align: center;
+}
+
+.event-date .month,
+.event-date .year {
+  display: block;
+  color: #777;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.event-date h4 {
+  font-size: 2rem;
+  margin: 5px 0;
+  color: #222;
+}
+
+.event-content small {
+  color: #888;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.event-content h5 {
+  font-size: 1.45rem;
+  color: #222;
+  margin: 0;
+}
+
+/* =========================
+   TABLET VIEW
+========================= */
+
+@media (max-width: 991px) {
+  .events-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .events-topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .find-btn {
+    width: 100%;
+  }
+
+  .past-events h3 {
+    font-size: 1.8rem;
+  }
+
+  .event-content h5 {
+    font-size: 1.2rem;
+  }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 576px) {
+  .events-section {
+    padding-bottom: 50px;
+  }
+
+  .events-header {
+    padding: 50px 0;
+  }
+
+  .events-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .events-header p {
+    font-size: 0.85rem;
+  }
+
+  .events-topbar {
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+
+  .search-box input {
+    height: 48px;
+    font-size: 0.9rem;
+  }
+
+  .find-btn {
+    height: 48px;
+    font-size: 0.9rem;
+  }
+
+  .month-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .month-bar h4 {
+    font-size: 1.2rem;
+  }
+
+  .no-events {
+    font-size: 0.9rem;
+    margin-bottom: 45px;
+  }
+
+  .past-events h3 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .past-event-item {
+    gap: 18px;
+    margin-bottom: 35px;
+  }
+
+  .event-date {
+    min-width: 45px;
+  }
+
+  .event-date h4 {
+    font-size: 1.5rem;
+  }
+
+  .event-content small {
+    font-size: 0.82rem;
+  }
+
+  .event-content h5 {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

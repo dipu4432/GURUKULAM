@@ -71,6 +71,10 @@ function NavBar() {
               <Nav.Link href="#contact">
                 Contact
               </Nav.Link>
+
+              <Nav.Link href="/events">
+                Events
+              </Nav.Link>
             </Nav>
 
             {/* Button */}
