@@ -1,0 +1,150 @@
+/* trustBoards.css */
+
+.trust-section {
+  padding: 70px 0;
+  background: #fff;
+}
+
+/* Header */
+
+.trust-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.trust-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.trust-header p {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.trust-header span {
+  color: #d28b18;
+  font-weight: 600;
+}
+
+/* Content */
+
+.trust-content p {
+  color: #666;
+  line-height: 2;
+  font-size: 1rem;
+  margin-bottom: 28px;
+}
+
+.trust-content strong {
+  color: #333;
+}
+
+/* Members */
+
+.trust-members {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.trust-members p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Image */
+
+.trust-image {
+  text-align: center;
+}
+
+.trust-image img {
+  width: 320px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.trust-image span {
+  display: block;
+  margin-top: 12px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   TABLET VIEW
+========================= */
+
+@media (max-width: 991px) {
+  .trust-section {
+    padding: 60px 0;
+  }
+
+  .trust-header {
+    margin-bottom: 45px;
+  }
+
+  .trust-header h2 {
+    font-size: 2.1rem;
+  }
+
+  .trust-content p {
+    font-size: 0.97rem;
+    line-height: 1.9;
+  }
+
+  .trust-members {
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 576px) {
+  .trust-section {
+    padding: 45px 0;
+  }
+
+  .trust-header {
+    margin-bottom: 35px;
+  }
+
+  .trust-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .trust-header p {
+    font-size: 0.85rem;
+  }
+
+  .trust-content p {
+    font-size: 0.94rem;
+    line-height: 1.9;
+    margin-bottom: 22px;
+  }
+
+  .trust-members {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .trust-members p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .trust-image img {
+    width: 100%;
+  }
+
+  .trust-image span {
+    font-size: 0.85rem;
+  }
+}
