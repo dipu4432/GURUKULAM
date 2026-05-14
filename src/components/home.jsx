@@ -4,6 +4,7 @@ import Donate from "./donatePage"
 import Gaushala from "./gaushala";
 import Gallery from "./gallery";
 import Facility from "./facility";
+import Facilities from "./facilities";
 import FooterSection from "./footerSection";
 
 const Home = () => {
@@ -31,6 +32,10 @@ const Home = () => {
 
       <section id="facility">
         <Facility />
+      </section>
+
+      <section id="facilities">
+        <Facilities />
       </section>
 
       <section id="footer">

@@ -1,0 +1,193 @@
+/* facilities.css */
+
+.facilities-section {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+/* Headings */
+
+.left-content h2,
+.right-content h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+/* Text */
+
+.small-text {
+  color: #666;
+  margin-bottom: 22px;
+  font-size: 1rem;
+}
+
+.description,
+.bottom-text {
+  color: #777;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.description {
+  margin-bottom: 35px;
+}
+
+.bottom-text {
+  margin-top: 35px;
+}
+
+/* Facility Items */
+
+.facility-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.facility-icon {
+  color: #f7931e;
+  font-size: 1.2rem;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.facility-item p {
+  color: #7d8b99;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.facility-item strong {
+  color: #344054;
+  font-weight: 700;
+}
+
+/* Accordion */
+
+.accordion-wrapper {
+  margin-top: 10px;
+}
+
+.custom-accordion {
+  background: #fff;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #fafafa;
+}
+
+.accordion-icon {
+  color: #f7931e;
+  font-size: 0.9rem;
+  min-width: 16px;
+}
+
+.accordion-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.accordion-body-custom {
+  padding: 0 25px 25px 58px;
+}
+
+.accordion-body-custom p {
+  color: #777;
+  line-height: 2;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+  .facilities-section {
+    padding: 65px 0;
+  }
+
+  .left-content h2,
+  .right-content h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .facility-item p {
+    font-size: 1.1rem;
+  }
+
+  .description,
+  .bottom-text,
+  .accordion-body-custom p {
+    font-size: 0.97rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+  .facilities-section {
+    padding: 50px 0;
+  }
+
+  .left-content h2,
+  .right-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .description,
+  .bottom-text {
+    line-height: 1.9;
+    font-size: 0.95rem;
+  }
+
+  .facility-item {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .facility-item p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .accordion-header {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .accordion-header h4 {
+    font-size: 0.92rem;
+  }
+
+  .accordion-body-custom {
+    padding: 0 18px 18px 48px;
+  }
+
+  .accordion-body-custom p {
+    font-size: 0.93rem;
+    line-height: 1.8;
+  }
+}
