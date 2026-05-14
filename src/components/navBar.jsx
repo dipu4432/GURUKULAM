@@ -3,6 +3,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
+
+import { Link } from "react-router-dom";
+
 import "./navBar.css";
 
 function NavBar() {
@@ -15,14 +18,18 @@ function NavBar() {
       >
         <Container>
           {/* Logo */}
-          <Navbar.Brand>Gurukulam</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            Gurukulam
+          </Navbar.Brand>
 
           {/* Toggle */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto nav-mobile">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/">
+                Home
+              </Nav.Link>
 
               {/* About Dropdown */}
               <NavDropdown
@@ -30,26 +37,40 @@ function NavBar() {
                 id="about-dropdown"
                 className="custom-dropdown"
               >
-                <NavDropdown.Item href="#vision">
+                <NavDropdown.Item as={Link} to="/vision">
                   Vision
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="#why-gurukulam">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/why-gurukulam"
+                >
                   Why Gurukulam
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="/trust-boards">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/trust-boards"
+                >
                   Trust Boards
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#gaushala">Gaushala</Nav.Link>
+              <Nav.Link href="#gaushala">
+                Gaushala
+              </Nav.Link>
 
-              <Nav.Link href="#facility">Education</Nav.Link>
+              <Nav.Link href="#facility">
+                Education
+              </Nav.Link>
 
-              <Nav.Link href="#gallery">Gallery</Nav.Link>
+              <Nav.Link href="#gallery">
+                Gallery
+              </Nav.Link>
 
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#contact">
+                Contact
+              </Nav.Link>
             </Nav>
 
             {/* Button */}

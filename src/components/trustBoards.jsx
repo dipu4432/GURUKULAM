@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import trustImg from "../assets/trust-board.jpg";
+// import trustImg from "../assets/footer-bg.jpg";
 
 import "./trustBoards.css";
 
@@ -14,9 +14,9 @@ function TrustBoards() {
         <div className="trust-header">
           <h2>Trust Boards</h2>
 
-          <p>
-            Home / Contact Us / <span>Trust Boards</span>
-          </p>
+          {/* <p>
+            Home / About Us / <span>Trust Boards</span>
+          </p> */}
         </div>
 
         {/* Content */}
@@ -55,10 +55,22 @@ function TrustBoards() {
               </div>
 
               {/* Image */}
-              <div className="trust-image">
+              {/* <div className="trust-image">
                 <img src={trustImg} alt="Tapovan Sanskar Pith" />
 
                 <span>Tapovan Sanskar pith</span>
+              </div> */}
+              {/* PDF Download */}
+              <div className="trust-pdf">
+                <a
+                  href="/trust-board.pdf"
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pdf-btn"
+                >
+                  Download Trust Board PDF
+                </a>
               </div>
             </div>
           </Col>

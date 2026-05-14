@@ -5,7 +5,9 @@
   background: #fff;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
 
 .trust-header {
   text-align: center;
@@ -29,7 +31,9 @@
   font-weight: 600;
 }
 
-/* Content */
+/* =========================
+   CONTENT
+========================= */
 
 .trust-content p {
   color: #666;
@@ -42,7 +46,9 @@
   color: #333;
 }
 
-/* Members */
+/* =========================
+   MEMBERS
+========================= */
 
 .trust-members {
   margin-top: 45px;
@@ -55,24 +61,31 @@
   font-size: 1rem;
 }
 
-/* Image */
+/* =========================
+   PDF BUTTON
+========================= */
 
-.trust-image {
+.trust-pdf {
   text-align: center;
+  margin-top: 40px;
 }
 
-.trust-image img {
-  width: 320px;
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 4px;
+.pdf-btn {
+  display: inline-block;
+  background: #fe8d00;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border: none;
 }
 
-.trust-image span {
-  display: block;
-  margin-top: 12px;
-  color: #777;
-  font-size: 0.9rem;
+.pdf-btn:hover {
+  background: #e17c00;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* =========================
@@ -100,6 +113,11 @@
   .trust-members {
     margin-top: 35px;
     margin-bottom: 40px;
+  }
+
+  .pdf-btn {
+    padding: 13px 24px;
+    font-size: 0.95rem;
   }
 }
 
@@ -140,11 +158,14 @@
     margin-bottom: 8px;
   }
 
-  .trust-image img {
-    width: 100%;
+  .trust-pdf {
+    margin-top: 30px;
   }
 
-  .trust-image span {
-    font-size: 0.85rem;
+  .pdf-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 0.92rem;
   }
 }
