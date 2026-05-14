@@ -3,8 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
-
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 import "./navBar.css";
 
@@ -19,7 +19,7 @@ function NavBar() {
         <Container>
           {/* Logo */}
           <Navbar.Brand as={Link} to="/">
-            Gurukulam
+            <img src={Logo} alt="Gurukulam Logo" className="logo" />
           </Navbar.Brand>
 
           {/* Toggle */}

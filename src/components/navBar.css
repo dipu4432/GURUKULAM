@@ -1,37 +1,127 @@
-/* Increase brand name size */
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* =========================
+   BRAND / LOGO
+========================= */
+
 .navbar-brand {
-  font-size: 3rem !important;   /* desktop */
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 3rem !important;
   font-weight: 700;
 }
 
-/* Dropdown */
+.logo {
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-mobile {
+  gap: 10px;
+}
+
+.nav-mobile .nav-link {
+  color: #222 !important;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 8px 14px !important;
+}
+
+.nav-mobile .nav-link:hover {
+  color: #fff !important;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.custom-dropdown .dropdown-toggle {
+  color: #222 !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.custom-dropdown .dropdown-toggle:hover {
+  color: #fff !important;
+}
 
 .custom-dropdown .dropdown-menu {
   border: none;
   border-radius: 8px;
   padding: 10px 0;
+  margin-top: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .custom-dropdown .dropdown-item {
   padding: 10px 18px;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .custom-dropdown .dropdown-item:hover {
-  background-color: #FE8D00;
+  background-color: #fe8d00;
   color: #fff;
 }
 
-/* Mobile responsive */
+/* =========================
+   DONATE BUTTON
+========================= */
+
+.navbar .btn {
+  transition: 0.3s ease;
+}
+
+.navbar .btn:hover {
+  transform: translateY(-2px);
+  background-color: #e8b964 !important;
+}
+
+/* =========================
+   TOGGLER
+========================= */
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* =========================
+   TABLET VIEW
+========================= */
+
 @media (max-width: 991px) {
   .navbar-brand {
     font-size: 2rem !important;
   }
 
+  .logo {
+    height: 60px;
+  }
+
   .nav-mobile {
     gap: 10px !important;
+    margin-top: 15px;
   }
 
   .nav-mobile .nav-link {
@@ -44,7 +134,7 @@
   }
 
   .navbar .btn {
-    margin-top: 10px;
+    margin-top: 14px;
     width: 100%;
   }
 
@@ -55,6 +145,7 @@
     box-shadow: none;
     background: transparent;
     padding: 0;
+    margin-top: 0;
     margin-left: 10px;
   }
 
@@ -66,5 +157,32 @@
   .custom-dropdown .dropdown-item:hover {
     background: transparent;
     color: #fff;
+  }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 4px 0;
+  }
+
+  .logo {
+    height: 52px;
+  }
+
+  .nav-mobile .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar .btn {
+    font-size: 14px;
+    padding: 10px 14px !important;
+  }
+
+  .custom-dropdown .dropdown-item {
+    font-size: 13px;
   }
 }
