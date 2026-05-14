@@ -1,6 +1,7 @@
 import Banner from "./banner";
 import About from "./about";
 import Donate from "./donatePage"
+import Donors from "./donors";
 import Gaushala from "./gaushala";
 import Gallery from "./gallery";
 import Facility from "./facility";
@@ -20,6 +21,10 @@ const Home = () => {
 
       <section id="donate">
         <Donate />
+      </section>
+
+      <section id="donors">
+        <Donors />
       </section>
 
       <section id="gaushala">
