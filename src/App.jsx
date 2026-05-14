@@ -4,9 +4,9 @@ import NavBar from "./components/navBar";
 import HOME from "./components/home";
 import Footer from "./components/footer";
 
-import Vision from "./components/Vision";
-import WhyGurukulam from "./components/WhyGurukulam";
-import TrustBoards from "./components/TrustBoards";
+import Vision from "./components/vision";
+import WhyGurukulam from "./components/whyGurukulam";
+import TrustBoards from "./components/trustBoards";
 
 import Events from "./components/Events";
 
