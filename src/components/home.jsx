@@ -1,6 +1,6 @@
 import Banner from "./banner";
 import About from "./about";
-import Donate from "./donatePage"
+// import Donate from "./donatePage"
 import Donors from "./donors";
 import Gaushala from "./gaushala";
 import Gallery from "./gallery";
@@ -19,9 +19,9 @@ const Home = () => {
         <About />
       </section>
 
-      <section id="donate">
+      {/* <section id="donate">
         <Donate />
-      </section>
+      </section> */}
 
       <section id="donors">
         <Donors />
