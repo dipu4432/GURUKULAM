@@ -8,7 +8,7 @@ import Vision from "./components/vision";
 import WhyGurukulam from "./components/whyGurukulam";
 import TrustBoards from "./components/trustBoards";
 
-import Events from "./components/events";
+import Events from "./components/events.jsx";
 
 function App() {
   return (
@@ -24,20 +24,11 @@ function App() {
 
             <Route path="/vision" element={<Vision />} />
 
-            <Route
-              path="/why-gurukulam"
-              element={<WhyGurukulam />}
-            />
+            <Route path="/why-gurukulam" element={<WhyGurukulam />} />
 
-            <Route
-              path="/trust-boards"
-              element={<TrustBoards />}
-            />
+            <Route path="/trust-boards" element={<TrustBoards />} />
 
-            <Route
-              path="/events"
-              element={<Events />}
-            />
+            <Route path="/events" element={<Events />} />
           </Routes>
         </div>
 
