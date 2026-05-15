@@ -8,7 +8,7 @@ import Vision from "./components/vision";
 import WhyGurukulam from "./components/whyGurukulam";
 import TrustBoards from "./components/trustBoards";
 
-import Events from "./components/events";
+import Events from "./components/Events";
 
 function App() {
   return (
