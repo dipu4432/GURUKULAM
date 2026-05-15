@@ -6,15 +6,6 @@
 }
 
 /* =========================
-   CONTAINER SPACING
-========================= */
-
-.donor-section .container-fluid {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-/* =========================
    SECTION HEADER
 ========================= */
 
@@ -23,11 +14,12 @@
 }
 
 .section-header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #111;
-  padding-bottom: 12px;
   border-bottom: 2px solid #ff6a1a;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 /* =========================
@@ -37,37 +29,34 @@
 .donor-description {
   color: #555;
   line-height: 1.8;
-  margin-bottom: 28px;
-  font-size: 1rem;
+  margin-bottom: 35px;
+  max-width: 900px;
 }
 
 /* =========================
-   DONOR GRID
+   DONOR GRID SCROLL
 ========================= */
 
-.donor-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-
+.donor-grid-wrapper {
   max-height: 520px;
   overflow-y: auto;
-
+  overflow-x: hidden;
   padding-right: 6px;
 }
 
-/* =========================
-   SCROLLBAR
-========================= */
+/* Scrollbar */
 
-.donor-grid::-webkit-scrollbar,
-.sidebar-scroll::-webkit-scrollbar {
+.donor-grid-wrapper::-webkit-scrollbar {
   width: 6px;
 }
 
-.donor-grid::-webkit-scrollbar-thumb,
-.sidebar-scroll::-webkit-scrollbar-thumb {
+.donor-grid-wrapper::-webkit-scrollbar-thumb {
   background: #ff7a2f;
+  border-radius: 20px;
+}
+
+.donor-grid-wrapper::-webkit-scrollbar-track {
+  background: #eee;
   border-radius: 20px;
 }
 
@@ -75,27 +64,25 @@
    DONOR CARD
 ========================= */
 
-.donor-card,
-.sidebar-donor-card {
+.donor-card {
   border: 2px dashed #ff7a2f;
-  border-radius: 14px;
+  border-radius: 16px;
   background: #fff;
-  padding: 16px;
+  padding: 18px;
   display: flex;
-  align-items: flex-start;
-  gap: 14px;
+  gap: 15px;
+  height: 100%;
   transition: 0.3s ease;
 }
 
-.donor-card:hover,
-.sidebar-donor-card:hover {
-  transform: translateY(-4px);
+.donor-card:hover {
+  transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .donor-icon {
-  width: 42px;
-  height: 42px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: #f36d21;
   color: #fff;
@@ -103,31 +90,28 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.donor-icon.small {
-  width: 38px;
-  height: 38px;
+  font-size: 1rem;
 }
 
 .donor-info h5 {
   margin: 0;
   font-size: 1rem;
   font-weight: 700;
-  color: #333;
+  color: #222;
 }
 
 .donor-info span {
   display: block;
   margin: 6px 0;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: #666;
 }
 
 .donor-info p {
   margin: 0;
   color: #f36d21;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 /* =========================
@@ -135,33 +119,28 @@
 ========================= */
 
 .testimonial-wrapper {
-  margin-top: 55px;
+  margin-top: 70px;
 }
 
 .testimonial-card {
   background: #fff;
   border: 2px dashed #ff7a2f;
-  padding: 55px 30px;
+  border-radius: 16px;
+  padding: 55px 25px;
   text-align: center;
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-.carousel-item {
-  transition: transform 0.8s ease-in-out;
 }
 
 .testimonial-content img {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 22px;
   border: 4px solid #ff7a2f;
+  margin-bottom: 20px;
 }
 
 .testimonial-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 12px;
   color: #222;
 }
@@ -169,12 +148,11 @@
 .testimonial-content p {
   color: #666;
   line-height: 1.8;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
-  font-size: 1rem;
 }
 
-/* Carousel Controls */
+/* Carousel Buttons */
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -184,64 +162,7 @@
 }
 
 /* =========================
-   SIDEBAR
-========================= */
-
-.sidebar-box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 14px;
-  height: 100%;
-}
-
-.sidebar-box p {
-  color: #555;
-  line-height: 1.9;
-  margin-bottom: 16px;
-  font-size: 0.96rem;
-}
-
-.donate-btn {
-  width: 100%;
-  border: none;
-  background: #ff641a;
-  color: #fff;
-  padding: 14px;
-  font-weight: 700;
-  margin: 20px 0 25px;
-  transition: 0.3s ease;
-  border-radius: 8px;
-}
-
-.donate-btn:hover {
-  background: #ea580c;
-}
-
-/* =========================
-   SIDEBAR DONORS
-========================= */
-
-.sidebar-donors h4 {
-  background: #ff641a;
-  color: #fff;
-  padding: 12px 16px;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  border-radius: 6px;
-}
-
-.sidebar-scroll {
-  max-height: 520px;
-  overflow-y: auto;
-  padding-right: 5px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-/* =========================
-   TABLET VIEW
+   TABLET
 ========================= */
 
 @media (max-width: 991px) {
@@ -249,40 +170,26 @@
     padding: 60px 0;
   }
 
-  .donor-section .container-fluid {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
   .section-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .donor-grid {
-    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.9rem;
   }
 
   .testimonial-content h3 {
     font-size: 1.5rem;
   }
 
-  .sidebar-box {
-    margin-top: 20px;
+  .donor-grid-wrapper {
+    max-height: 500px;
   }
 }
 
 /* =========================
-   MOBILE VIEW
+   MOBILE
 ========================= */
 
 @media (max-width: 576px) {
   .donor-section {
     padding: 50px 0;
-  }
-
-  .donor-section .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .section-header h2 {
@@ -293,26 +200,17 @@
     font-size: 0.95rem;
   }
 
-  .donor-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .donor-card,
-  .sidebar-donor-card {
-    padding: 14px;
-  }
-
-  .donor-info h5 {
-    font-size: 0.95rem;
+  .donor-card {
+    padding: 15px;
   }
 
   .testimonial-card {
-    padding: 40px 20px;
+    padding: 40px 18px;
   }
 
   .testimonial-content img {
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
   }
 
   .testimonial-content h3 {
@@ -328,11 +226,7 @@
     padding: 14px;
   }
 
-  .sidebar-box {
-    padding: 20px;
-  }
-
-  .donate-btn {
-    font-size: 0.95rem;
+  .donor-grid-wrapper {
+    max-height: 450px;
   }
 }
