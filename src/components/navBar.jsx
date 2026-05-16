@@ -20,6 +20,10 @@ function NavBar() {
           {/* Logo */}
           <Navbar.Brand as={Link} to="/">
             <img src={Logo} alt="Gurukulam Logo" className="logo" />
+            <div className="brand-text">
+              <p>VASUDHAIV</p>
+              <p>GURUKULAM BHARAT</p>
+            </div>
           </Navbar.Brand>
 
           {/* Toggle */}
@@ -41,40 +45,24 @@ function NavBar() {
                   Vision
                 </NavDropdown.Item>
 
-                <NavDropdown.Item
-                  as={Link}
-                  to="/why-gurukulam"
-                >
+                <NavDropdown.Item as={Link} to="/why-gurukulam">
                   Why Gurukulam
                 </NavDropdown.Item>
 
-                <NavDropdown.Item
-                  as={Link}
-                  to="/trust-boards"
-                >
+                <NavDropdown.Item as={Link} to="/trust-boards">
                   Trust Boards
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#gaushala">
-                Gaushala
-              </Nav.Link>
+              <Nav.Link href="#gaushala">Gaushala</Nav.Link>
 
-              <Nav.Link href="#facility">
-                Education
-              </Nav.Link>
+              <Nav.Link href="#facility">Education</Nav.Link>
 
-              <Nav.Link href="#gallery">
-                Gallery
-              </Nav.Link>
+              <Nav.Link href="#gallery">Gallery</Nav.Link>
 
-              <Nav.Link href="#contact">
-                Contact
-              </Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
 
-              <Nav.Link href="/events">
-                Events
-              </Nav.Link>
+              <Nav.Link href="/events">Events</Nav.Link>
             </Nav>
 
             {/* Button */}

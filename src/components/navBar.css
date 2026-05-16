@@ -13,12 +13,14 @@
 ========================= */
 
 .navbar-brand {
-  display: flex;
+  display: flex !important;
   align-items: center;
+  gap: 12px;
+  text-decoration: none;
   padding: 0;
-  font-size: 3rem !important;
-  font-weight: 700;
 }
+
+/* Logo */
 
 .logo {
   height: 75px;
@@ -29,6 +31,36 @@
 
 .logo:hover {
   transform: scale(1.03);
+}
+
+/* Brand Text */
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-text p {
+  margin: 0;
+  line-height: 1.1;
+  color: #000;
+}
+
+/* First line bigger */
+
+.brand-text p:first-child {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Second line smaller */
+
+.brand-text p:last-child {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 /* =========================
@@ -111,12 +143,17 @@
 ========================= */
 
 @media (max-width: 991px) {
-  .navbar-brand {
-    font-size: 2rem !important;
-  }
-
   .logo {
     height: 60px;
+  }
+
+  .brand-text p:first-child {
+    font-size: 1rem;
+  }
+
+  .brand-text p:last-child {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
   }
 
   .nav-mobile {
@@ -169,8 +206,21 @@
     padding: 4px 0;
   }
 
+  .navbar-brand {
+    gap: 8px;
+  }
+
   .logo {
     height: 52px;
+  }
+
+  .brand-text p:first-child {
+    font-size: 0.9rem;
+  }
+
+  .brand-text p:last-child {
+    font-size: 0.68rem;
+    letter-spacing: 1px;
   }
 
   .nav-mobile .nav-link {
