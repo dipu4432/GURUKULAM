@@ -6,6 +6,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  padding: 10px 0;
 }
 
 /* =========================
@@ -15,7 +16,7 @@
 .navbar-brand {
   display: flex !important;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
   padding: 0;
 }
@@ -23,7 +24,7 @@
 /* Logo */
 
 .logo {
-  height: 75px;
+  height: 82px;
   width: auto;
   object-fit: contain;
   transition: 0.3s ease;
@@ -33,7 +34,9 @@
   transform: scale(1.03);
 }
 
-/* Brand Text */
+/* =========================
+   BRAND TEXT
+========================= */
 
 .brand-text {
   display: flex;
@@ -43,24 +46,32 @@
 
 .brand-text p {
   margin: 0;
-  line-height: 1.1;
   color: #000;
+  line-height: 1.05;
 }
 
-/* First line bigger */
+/* VASUDHAIV */
 
-.brand-text p:first-child {
-  font-size: 1.2rem;
+.brand-text p:nth-child(1) {
+  font-size: 1.55rem;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
-/* Second line smaller */
+/* GURUKULAM BHARAT */
 
-.brand-text p:last-child {
-  font-size: 0.85rem;
-  font-weight: 600;
+.brand-text p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 2px;
+}
+
+/* CHARITABLE TRUST */
+
+.brand-text p:nth-child(3) {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
 }
 
 /* =========================
@@ -68,13 +79,13 @@
 ========================= */
 
 .nav-mobile {
-  gap: 10px;
+  gap: 14px;
 }
 
 .nav-mobile .nav-link {
-  color: #222 !important;
+  color: #111 !important;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s ease;
   padding: 8px 14px !important;
 }
@@ -88,8 +99,8 @@
 ========================= */
 
 .custom-dropdown .dropdown-toggle {
-  color: #222 !important;
-  font-weight: 500;
+  color: #111 !important;
+  font-weight: 600;
   transition: 0.3s ease;
 }
 
@@ -99,7 +110,7 @@
 
 .custom-dropdown .dropdown-menu {
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 10px 0;
   margin-top: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
@@ -122,6 +133,7 @@
 
 .navbar .btn {
   transition: 0.3s ease;
+  border-radius: 8px;
 }
 
 .navbar .btn:hover {
@@ -144,15 +156,20 @@
 
 @media (max-width: 991px) {
   .logo {
-    height: 60px;
+    height: 65px;
   }
 
-  .brand-text p:first-child {
-    font-size: 1rem;
+  .brand-text p:nth-child(1) {
+    font-size: 1.15rem;
   }
 
-  .brand-text p:last-child {
-    font-size: 0.75rem;
+  .brand-text p:nth-child(2) {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .brand-text p:nth-child(3) {
+    font-size: 0.62rem;
     letter-spacing: 1px;
   }
 
@@ -174,8 +191,6 @@
     margin-top: 14px;
     width: 100%;
   }
-
-  /* Mobile Dropdown */
 
   .custom-dropdown .dropdown-menu {
     border: none;
@@ -203,24 +218,33 @@
 
 @media (max-width: 576px) {
   .navbar {
-    padding: 4px 0;
+    padding: 6px 0;
   }
 
   .navbar-brand {
-    gap: 8px;
+    gap: 10px;
   }
 
   .logo {
-    height: 52px;
+    height: 55px;
   }
 
-  .brand-text p:first-child {
-    font-size: 0.9rem;
+  .brand-text p {
+    line-height: 1;
   }
 
-  .brand-text p:last-child {
-    font-size: 0.68rem;
+  .brand-text p:nth-child(1) {
+    font-size: 0.95rem;
+  }
+
+  .brand-text p:nth-child(2) {
+    font-size: 0.66rem;
     letter-spacing: 1px;
+  }
+
+  .brand-text p:nth-child(3) {
+    font-size: 0.52rem;
+    letter-spacing: 0.8px;
   }
 
   .nav-mobile .nav-link {

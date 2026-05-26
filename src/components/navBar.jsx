@@ -23,6 +23,7 @@ function NavBar() {
             <div className="brand-text">
               <p>VASUDHAIV</p>
               <p>GURUKULAM BHARAT</p>
+              <p>CHARITABLE TRUST</p>
             </div>
           </Navbar.Brand>
 
@@ -67,6 +68,8 @@ function NavBar() {
 
             {/* Button */}
             <Button
+              as={Link}
+              to="/qr-donate"
               style={{
                 backgroundColor: "#F4C679",
                 color: "#000",

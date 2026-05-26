@@ -78,9 +78,13 @@ function Donors() {
           <h2>Recent Donors</h2>
         </div>
 
-        <p className="donor-description">
+        {/* <p className="donor-description">
           The Goal of the Shri Raghav Gaudham is to eliminate the harmful impact
           of this inhumane and unnatural treatment.
+        </p> */}
+        <p className="donor-description">
+          श्री राघव गौधाम का उद्देश्य इस अमानवीय और अप्राकृतिक व्यवहार के
+          हानिकारक प्रभाव को समाप्त करना है।
         </p>
 
         <div className="donor-grid-wrapper">

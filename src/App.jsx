@@ -9,6 +9,7 @@ import WhyGurukulam from "./components/whyGurukulam";
 import TrustBoards from "./components/trustBoards";
 
 import Events from "./components/events.jsx";
+import QRDonate from "./components/QRDonate";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
             <Route path="/trust-boards" element={<TrustBoards />} />
 
             <Route path="/events" element={<Events />} />
+
+            <Route path="/qr-donate" element={<QRDonate />} />
           </Routes>
         </div>
 
