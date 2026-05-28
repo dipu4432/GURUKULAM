@@ -37,18 +37,18 @@ function FooterSection() {
                 <div className="contact-item">
                   <FaMapMarkerAlt className="icon" />
                   <span>
-                    Virtiyana Shivli, Kanpur Dehat, 209204 (U.P.)
+                    Shahar Chapra, Derni, Dariyapur, Saran, 841219 (Bihar)
                   </span>
                 </div>
 
                 <div className="contact-item">
                   <FaEnvelope className="icon" />
-                  <span>info@shriraghavgaudham.org</span>
+                  <span>info@gurukulam.org</span>
                 </div>
 
                 <div className="contact-item">
                   <FaWhatsapp className="icon" />
-                  <span>8400151995</span>
+                  <span>9631783193</span>
                 </div>
 
                 <div className="visitor-section">
@@ -89,9 +89,9 @@ function FooterSection() {
                 <h3>Bank Details</h3>
 
                 <p>
-                  <strong>Name -</strong> SHRI RAGHAV GOVARDHAN
+                  <strong>Name -</strong> VASHUDHAIV GURUKULAM BHARAT
                   <br />
-                  GAUSHALA SAMITI
+                  CHARITABLE TRUST
                 </p>
 
                 <p>
