@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .hero-section {
-    height: 80vh;
+    height: 70vh;
     padding: 0 15px;
   }
 
@@ -84,5 +84,65 @@
   .hero-buttons .btn {
     width: 100%;
     max-width: 250px;
+  }
+}
+/* ========================= */
+/* Marquee */
+/* ========================= */
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #d67816;
+  padding: 12px 0;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 60px;
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.marquee-track span {
+  white-space: nowrap;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Clickable Text */
+.marquee-text-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.3s ease;
+}
+
+.marquee-text-link:hover {
+  color: #ffe082;
+  text-decoration: underline;
+}
+
+/* Pause animation on hover */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .marquee-track span {
+    font-size: 0.9rem;
   }
 }
