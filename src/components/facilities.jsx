@@ -61,17 +61,17 @@ function Facilities() {
               <p className="small-text">Facilities</p>
 
               <p className="description">
-                TAPOVAN SANSKAR PITH is devoted to excellence in teaching,
+                VASUDHAIV GURUKULAM BHARAT CHARITABLE TRUST is devoted to excellence in teaching,
                 learning, research work and developing leaders in many
-                disciplines who can make a difference on global basis.
+                disciplines who can make a difference on spritual basis.
               </p>
 
               <div className="facility-item">
                 <FaGlobe className="facility-icon" />
 
                 <p>
-                  <strong>International focus</strong> – our students come from
-                  each nook and corner of the globe.
+                  <strong>Spiritual focus</strong> – our students beleif in the
+                  spritual aspect of life is nurtured and encouraged.
                 </p>
               </div>
 
@@ -79,8 +79,8 @@ function Facilities() {
                 <FaGraduationCap className="facility-icon" />
 
                 <p>
-                  <strong>Residential courses</strong> – we encourage learning
-                  and growth.
+                  <strong>Spirituality courses</strong> – we encourage spritual
+                  learning and growth.
                 </p>
               </div>
 
@@ -93,10 +93,10 @@ function Facilities() {
                 </p>
               </div>
 
-              <p className="bottom-text">
+              {/* <p className="bottom-text">
                 If you prefer to study in your own time and at your own speed
                 then one of our e-learning packages may light up your street.
-              </p>
+              </p> */}
             </div>
           </Col>
 

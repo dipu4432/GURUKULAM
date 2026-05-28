@@ -6,19 +6,19 @@ function Facility() {
   const items = [
     {
       icon: <FaUtensils />,
-      title: "Healthy Satvik Bhojan"
+      title: "स्वस्थ सात्विक भोजन"
     },
     {
       icon: <FaBed />,
-      title: "Clean Hostel"
+      title: "स्वच्छ छात्रावास"
     },
     {
       icon: <FaShieldAlt />,
-      title: "Safe Campus"
+      title: "सुरक्षित परिसर"
     },
     {
       icon: <FaHeart />,
-      title: "24/7 Care"
+      title: "गौ सेवा"
     }
   ];
 
@@ -26,7 +26,8 @@ function Facility() {
     <section className="facility-section">
       <Container>
         <div className="facility-header">
-          <h2>Rahne Aur Khane ki Sampoorna Suvidha</h2>
+          {/* <h2>Rahne Aur Khane ki Sampoorna Suvidha</h2> */}
+          <h2>रहने और खाने की सम्पूर्ण सुविधा</h2>
         </div>
 
         <Row className="g-4 justify-content-center">

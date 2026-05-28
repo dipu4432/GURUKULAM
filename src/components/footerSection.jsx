@@ -41,17 +41,34 @@ function FooterSection() {
                   </span>
                 </div>
 
-                <div className="contact-item">
+                {/* <div className="contact-item">
                   <FaEnvelope className="icon" />
-                  <span>info@gurukulam.org</span>
+                  <span>dipukumarpojhi@gmail.com</span>
                 </div>
 
                 <div className="contact-item">
                   <FaWhatsapp className="icon" />
                   <span>9631783193</span>
+                </div> */}
+                <div className="contact-item">
+                  <FaEnvelope className="icon" />
+                  <a href="mailto:dipukumarpojhi@gmail.com">
+                    dipukumarpojhi@gmail.com
+                  </a>
                 </div>
 
-                <div className="visitor-section">
+                <div className="contact-item">
+                  <FaWhatsapp className="icon" />
+                  <a
+                    href="https://wa.me/919631783193"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    9631783193
+                  </a>
+                </div>
+
+                {/* <div className="visitor-section">
                   <div>
                     <h4>3977</h4>
                     <p>Today Visitor</p>
@@ -61,10 +78,13 @@ function FooterSection() {
                     <h4>1377823</h4>
                     <p>Total Visitor</p>
                   </div>
-                </div>
+                </div> */}
                 {/* Social Icons */}
                 <div className="social-icons">
-                  <a href="https://www.google.com/?zx=1778749134554" className="facebook">
+                  <a
+                    href="https://www.google.com/?zx=1778749134554"
+                    className="facebook"
+                  >
                     <FaFacebookF />
                   </a>
 
@@ -114,8 +134,12 @@ function FooterSection() {
 
             {/* QR Code */}
             <Col lg={2} md={12} className="text-center">
-              <div className="qr-box">
-                <img src={qrCode} alt="QR Code" />
+              <div className="footer-box qr-section">
+                <h3>Donate with QR</h3>
+
+                <div className="qr-box">
+                  <img src={qrCode} alt="QR Code" />
+                </div>
               </div>
             </Col>
           </Row>

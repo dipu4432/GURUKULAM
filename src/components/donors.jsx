@@ -3,9 +3,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
-import { FaUser } from "react-icons/fa";
+import { FaUser, FaUserCircle } from "react-icons/fa";
 
-import testimonialImg from "../assets/p1.jpg";
+import qrCode from "../assets/qr.jpeg";
 
 import "./donors.css";
 
@@ -55,17 +55,14 @@ function Donors() {
 
   const testimonials = [
     {
-      image: testimonialImg,
       name: "Shri Alok Chaudhari",
       text: "Dedicated supporter and contributor of Gurukulam activities and social services.",
     },
     {
-      image: testimonialImg,
       name: "Amit Sharma",
       text: "Wonderful spiritual environment and educational support.",
     },
     {
-      image: testimonialImg,
       name: "Rajesh Kumar",
       text: "Amazing experience with Gurukulam and Gaushala services.",
     },
@@ -78,36 +75,50 @@ function Donors() {
           <h2>Recent Donors</h2>
         </div>
 
-        {/* <p className="donor-description">
-          The Goal of the Shri Raghav Gaudham is to eliminate the harmful impact
-          of this inhumane and unnatural treatment.
-        </p> */}
         <p className="donor-description">
-          श्री अभिषेक कुमार शर्मा का उद्देश्य इस अमानवीय और अप्राकृतिक व्यवहार के
-          हानिकारक प्रभाव को समाप्त करना है।
+          श्री अभिषेक कुमार शर्मा का उद्देश्य इस अमानवीय और अप्राकृतिक व्यवहार
+          के हानिकारक प्रभाव को समाप्त करना है।
         </p>
 
-        <div className="donor-grid-wrapper">
-          <Row className="g-4">
-            {donors.map((donor, index) => (
-              <Col lg={4} md={6} key={index}>
-                <div className="donor-card">
-                  <div className="donor-icon">
-                    <FaUser />
-                  </div>
+        {/* Donor + QR Layout */}
 
-                  <div className="donor-info">
-                    <h5>{donor.name}</h5>
+        <Row className="g-4 align-items-start">
+          {/* Donors */}
 
-                    <span>{donor.time}</span>
+          <Col lg={8}>
+            <div className="donor-grid-wrapper">
+              <Row className="g-4">
+                {donors.map((donor, index) => (
+                  <Col lg={6} key={index}>
+                    <div className="donor-card">
+                      <div className="donor-icon">
+                        <FaUser />
+                      </div>
 
-                    <p>{donor.state}</p>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </div>
+                      <div className="donor-info">
+                        <h5>{donor.name}</h5>
+
+                        <span>{donor.time}</span>
+
+                        <p>{donor.state}</p>
+                      </div>
+                    </div>
+                  </Col>
+                ))}
+              </Row>
+            </div>
+          </Col>
+
+          {/* QR Code */}
+
+          <Col lg={4}>
+            <div className="donation-qr-card">
+              <h3>Donate with QR</h3>
+
+              <img src={qrCode} alt="Donate QR" />
+            </div>
+          </Col>
+        </Row>
 
         {/* Testimonials */}
 
@@ -121,7 +132,9 @@ function Donors() {
               {testimonials.map((item, index) => (
                 <Carousel.Item key={index}>
                   <div className="testimonial-content">
-                    <img src={item.image} alt={item.name} />
+                    <div className="testimonial-user-icon">
+                      <FaUserCircle />
+                    </div>
 
                     <h3>{item.name}</h3>
 

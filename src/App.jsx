@@ -5,7 +5,7 @@ import HOME from "./components/home";
 import Footer from "./components/footer";
 
 import Vision from "./components/vision";
-import WhyGurukulam from "./components/whyGurukulam";
+import Founder from "./components/aboutFounder.jsx";
 import TrustBoards from "./components/trustBoards";
 
 import Events from "./components/events.jsx";
@@ -25,7 +25,7 @@ function App() {
 
             <Route path="/vision" element={<Vision />} />
 
-            <Route path="/why-gurukulam" element={<WhyGurukulam />} />
+            <Route path="/about-founder" element={<Founder />} />
 
             <Route path="/trust-boards" element={<TrustBoards />} />
 

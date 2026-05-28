@@ -46,8 +46,8 @@ function NavBar() {
                   Vision
                 </NavDropdown.Item>
 
-                <NavDropdown.Item as={Link} to="/why-gurukulam">
-                  Why Gurukulam
+                <NavDropdown.Item as={Link} to="/about-founder">
+                  Our Founder
                 </NavDropdown.Item>
 
                 <NavDropdown.Item as={Link} to="/trust-boards">

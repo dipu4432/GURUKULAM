@@ -1,8 +1,8 @@
 /* donors.css */
 
 .donor-section {
-  padding: 70px 0;
-  background: #f7f7f7;
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #f9f9f9, #f3f3f3);
 }
 
 /* =========================
@@ -10,16 +10,29 @@
 ========================= */
 
 .section-header {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .section-header h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #111;
-  border-bottom: 2px solid #ff6a1a;
-  padding-bottom: 10px;
+  position: relative;
   display: inline-block;
+  padding-bottom: 12px;
+}
+
+.section-header h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #ff6a1a;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 20px;
 }
 
 /* =========================
@@ -28,36 +41,38 @@
 
 .donor-description {
   color: #555;
-  line-height: 1.8;
-  margin-bottom: 35px;
-  max-width: 900px;
+  line-height: 1.9;
+  margin: 0 auto 40px;
+  max-width: 850px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* =========================
-   DONOR GRID SCROLL
+   DONOR GRID
 ========================= */
 
 .donor-grid-wrapper {
   max-height: 520px;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-right: 6px;
+  padding-right: 8px;
 }
 
 /* Scrollbar */
 
 .donor-grid-wrapper::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
 }
 
 .donor-grid-wrapper::-webkit-scrollbar-thumb {
   background: #ff7a2f;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .donor-grid-wrapper::-webkit-scrollbar-track {
-  background: #eee;
-  border-radius: 20px;
+  background: #ececec;
+  border-radius: 30px;
 }
 
 /* =========================
@@ -65,53 +80,130 @@
 ========================= */
 
 .donor-card {
-  border: 2px dashed #ff7a2f;
-  border-radius: 16px;
+  border-radius: 18px;
   background: #fff;
-  padding: 18px;
+  padding: 20px;
   display: flex;
-  gap: 15px;
+  gap: 16px;
   height: 100%;
-  transition: 0.3s ease;
+  transition: all 0.35s ease;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
 
 .donor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(243, 109, 33, 0.14);
+  border-color: #ff7a2f;
 }
 
 .donor-icon {
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  background: #f36d21;
+  background: linear-gradient(135deg, #ff7a2f, #f36d21);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 14px rgba(243, 109, 33, 0.3);
 }
 
 .donor-info h5 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #222;
 }
 
 .donor-info span {
   display: block;
-  margin: 6px 0;
-  font-size: 0.85rem;
-  color: #666;
+  margin: 7px 0;
+  font-size: 0.88rem;
+  color: #777;
 }
 
 .donor-info p {
   margin: 0;
   color: #f36d21;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 600;
+}
+
+/* =========================
+   QR SECTION
+========================= */
+
+.donation-qr-card {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.58)
+    ),
+    url("../assets/footer-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 24px;
+
+  padding: 40px 25px;
+
+  text-align: center;
+
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+
+  position: sticky;
+  top: 20px;
+}
+
+.donation-qr-card h3 {
+  color: #fff;
+
+  font-size: 2.2rem;
+
+  font-weight: 700;
+
+  margin-bottom: 30px;
+
+  position: relative;
+
+  display: inline-block;
+}
+
+.donation-qr-card h3::after {
+  content: "";
+
+  width: 70px;
+
+  height: 3px;
+
+  background: #fff;
+
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  bottom: -10px;
+
+  border-radius: 20px;
+}
+
+.donation-qr-card img {
+  width: 220px;
+
+  max-width: 100%;
+
+  background: #fff;
+
+  padding: 10px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* =========================
@@ -119,46 +211,99 @@
 ========================= */
 
 .testimonial-wrapper {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .testimonial-card {
   background: #fff;
-  border: 2px dashed #ff7a2f;
-  border-radius: 16px;
-  padding: 55px 25px;
+  border-radius: 22px;
+  padding: 60px 35px;
   text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
 }
 
-.testimonial-content img {
-  width: 110px;
-  height: 110px;
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 122, 47, 0.06);
   border-radius: 50%;
-  object-fit: cover;
+  top: -70px;
+  right: -70px;
+}
+
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 122, 47, 0.05);
+  border-radius: 50%;
+  bottom: -60px;
+  left: -60px;
+}
+
+/* =========================
+   TESTIMONIAL ICON
+========================= */
+
+.testimonial-user-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff4ec, #ffe5d6);
   border: 4px solid #ff7a2f;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(243, 109, 33, 0.18);
+}
+
+.testimonial-user-icon svg {
+  font-size: 5.5rem;
+  color: #ff7a2f;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 2;
 }
 
 .testimonial-content h3 {
-  font-size: 1.7rem;
-  margin-bottom: 12px;
+  font-size: 1.8rem;
+  margin-bottom: 14px;
   color: #222;
+  font-weight: 700;
 }
 
 .testimonial-content p {
   color: #666;
-  line-height: 1.8;
-  max-width: 700px;
+  line-height: 1.9;
+  max-width: 720px;
   margin: auto;
+  font-size: 1rem;
 }
 
-/* Carousel Buttons */
+/* =========================
+   CAROUSEL BUTTONS
+========================= */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #ff7a2f;
   border-radius: 50%;
   padding: 18px;
+  background-size: 55%;
+  box-shadow: 0 5px 16px rgba(243, 109, 33, 0.25);
 }
 
 /* =========================
@@ -167,19 +312,37 @@
 
 @media (max-width: 991px) {
   .donor-section {
-    padding: 60px 0;
+    padding: 65px 0;
   }
 
   .section-header h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 50px 25px;
   }
 
   .testimonial-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+  }
+
+  .testimonial-user-icon {
+    width: 105px;
+    height: 105px;
+  }
+
+  .testimonial-user-icon svg {
+    font-size: 5rem;
   }
 
   .donor-grid-wrapper {
     max-height: 500px;
+  }
+
+  .donation-qr-card {
+    position: static;
+    margin-top: 20px;
   }
 }
 
@@ -189,36 +352,69 @@
 
 @media (max-width: 576px) {
   .donor-section {
-    padding: 50px 0;
+    padding: 55px 0;
   }
 
   .section-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .donor-description {
     font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 32px;
   }
 
   .donor-card {
-    padding: 15px;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .donor-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 1rem;
+  }
+
+  .donor-info h5 {
+    font-size: 0.98rem;
+  }
+
+  .donation-qr-card {
+    padding: 32px 18px;
+    border-radius: 18px;
+  }
+
+  .donation-qr-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .donation-qr-card img {
+    width: 180px;
   }
 
   .testimonial-card {
-    padding: 40px 18px;
+    padding: 42px 18px;
+    border-radius: 18px;
   }
 
-  .testimonial-content img {
+  .testimonial-user-icon {
     width: 90px;
     height: 90px;
+    margin-bottom: 18px;
+  }
+
+  .testimonial-user-icon svg {
+    font-size: 4.2rem;
   }
 
   .testimonial-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 
   .testimonial-content p {
-    font-size: 0.92rem;
+    font-size: 0.93rem;
+    line-height: 1.8;
   }
 
   .carousel-control-prev-icon,
