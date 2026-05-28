@@ -83,7 +83,7 @@ function Donors() {
           of this inhumane and unnatural treatment.
         </p> */}
         <p className="donor-description">
-          श्री राघव गौधाम का उद्देश्य इस अमानवीय और अप्राकृतिक व्यवहार के
+          श्री अभिषेक कुमार शर्मा का उद्देश्य इस अमानवीय और अप्राकृतिक व्यवहार के
           हानिकारक प्रभाव को समाप्त करना है।
         </p>
 
