@@ -46,9 +46,9 @@ function NavBar() {
                   Vision
                 </NavDropdown.Item>
 
-                <NavDropdown.Item as={Link} to="/about-founder">
+                {/* <NavDropdown.Item as={Link} to="/about-founder">
                   Our Founder
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
                 <NavDropdown.Item as={Link} to="/trust-boards">
                   Trust Boards
@@ -71,8 +71,8 @@ function NavBar() {
               as={Link}
               to="/qr-donate"
               style={{
-                backgroundColor: "#F4C679",
-                color: "#000",
+                backgroundColor: "#4F7D39",
+                color: "#fff",
                 border: "none",
                 padding: "8px 16px",
                 fontWeight: "400",

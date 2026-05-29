@@ -33,7 +33,7 @@ function Banner() {
               as={Link}
               to="/qr-donate"
               style={{
-                backgroundColor: "#D67816",
+                backgroundColor: "#4F7D39",
                 border: "none",
                 color: "#FFFFFF",
               }}
