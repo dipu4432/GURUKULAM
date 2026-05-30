@@ -27,7 +27,7 @@
   content: "";
   width: 70px;
   height: 3px;
-  background: #ff6a1a;
+  /* background: #ff6a1a; */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

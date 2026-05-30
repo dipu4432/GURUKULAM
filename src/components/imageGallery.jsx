@@ -32,8 +32,9 @@ function ImageGallery() {
       <Container>
 
         <div className="imageGallery-header">
-          <h2>Our Gallery</h2>
-          <div className="imageGallery-line"></div>
+          {/* <h2>Our Gallery</h2> */}
+          <h2>हमारा चित्र संग्रह</h2>
+          {/* <div className="imageGallery-line"></div> */}
         </div>
 
         <div className="imageGallery-wrapper">
