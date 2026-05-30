@@ -18,9 +18,9 @@ function Events() {
   // Example:
   const upcomingEvents = [
     {
-      title: "Annual Function",
-      date: "20 May 2026",
-      description: "School annual cultural program."
+      title: "Satsang Function",
+      date: "5 June 2026",
+      description: "Satsang function for all students."
     }
   ];
 
@@ -59,7 +59,7 @@ function Events() {
       {/* Header */}
       <div className="events-header">
         <Container>
-          <h2>Events for May 2026</h2>
+          <h2>Events for June 2026</h2>
 
           {/* <p>
             Home / <span>Events</span>
@@ -70,7 +70,7 @@ function Events() {
       {/* Main */}
       <Container>
         {/* Search */}
-        <div className="events-topbar">
+        {/* <div className="events-topbar">
           <div className="search-box">
             <FaSearch className="search-icon" />
 
@@ -83,19 +83,19 @@ function Events() {
           <button className="find-btn">
             FIND EVENTS
           </button>
-        </div>
+        </div> */}
 
         {/* Month */}
         <div className="month-bar">
-          <button className="month-btn">
+          {/* <button className="month-btn">
             <FaChevronLeft />
-          </button>
+          </button> */}
 
-          <button className="current-btn">
+          {/* <button className="current-btn">
             This Month
-          </button>
+          </button> */}
 
-          <h4>May 2026</h4>
+          {/* <h4>June 2026</h4> */}
         </div>
 
         {/* Upcoming Events */}

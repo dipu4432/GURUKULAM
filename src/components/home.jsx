@@ -47,7 +47,7 @@ const Home = () => {
         <Gaushala />
       </section>
 
-      <section id="gallery">
+      <section id="education">
         <Gallery />
       </section>
 
@@ -58,10 +58,6 @@ const Home = () => {
       <section id="facility">
         <Facility />
       </section>
-
-      {/* <section id="image-gallery">
-        <ImageGallery />
-      </section> */}
 
       <section id="facilities">
         <Facilities />

@@ -55,13 +55,13 @@ function NavBar() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="#gaushala">Gaushala</Nav.Link>
+              <Nav.Link href="#gaushala-first">Gaushala</Nav.Link>
 
-              <Nav.Link href="#facility">Education</Nav.Link>
+              <Nav.Link href="#education">Education</Nav.Link>
 
-              <Nav.Link href="#gallery">Gallery</Nav.Link>
+              <Nav.Link href="#image-gallery">Gallery</Nav.Link>
 
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#footer">Contact</Nav.Link>
 
               <Nav.Link href="/events">Events</Nav.Link>
             </Nav>
