@@ -28,32 +28,51 @@ function ImageGallery() {
   };
 
   return (
-    <section className="gallery-section">
+    <section className="imageGallery-section">
       <Container>
 
-        <div className="gallery-wrapper">
+        <div className="imageGallery-header">
+          <h2>Our Gallery</h2>
+          <div className="imageGallery-line"></div>
+        </div>
 
-          <button className="gallery-btn" onClick={prevSlide}>
+        <div className="imageGallery-wrapper">
+
+          <button
+            className="imageGallery-btn"
+            onClick={prevSlide}
+          >
             ❮
           </button>
 
-          <div className="gallery-row">
+          <div className="imageGallery-row">
             {images.map((item, index) => (
-              <div className="gallery-card" key={index}>
-                <img src={item.img} alt={item.title} />
-                {/* <div className="gallery-caption">
+              <div
+                className="imageGallery-card"
+                key={index}
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                />
+
+                {/* Uncomment if needed */}
+
+                {/* <div className="imageGallery-caption">
                   {item.title}
                 </div> */}
               </div>
             ))}
           </div>
 
-          <button className="gallery-btn" onClick={nextSlide}>
+          <button
+            className="imageGallery-btn"
+            onClick={nextSlide}
+          >
             ❯
           </button>
 
         </div>
-
       </Container>
     </section>
   );

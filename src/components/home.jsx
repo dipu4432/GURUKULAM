@@ -4,6 +4,9 @@ import About from "./about";
 import Donors from "./donors";
 import Gaushala from "./gaushala";
 import Gallery from "./gallery";
+import GaushalaFirst from "./gaushalaFirst";
+import GaushalaFeatures from "./gaushalaFeatures";
+import Activities from "./activities";
 import ImageGallery from "./imageGallery";
 import Facility from "./facility";
 import Facilities from "./facilities";
@@ -28,6 +31,18 @@ const Home = () => {
         <Donors />
       </section>
 
+      <section id="gaushala-first">
+        <GaushalaFirst />
+      </section>
+
+      <section id="gaushala-features">
+        <GaushalaFeatures />
+      </section>
+
+      <section id="activities">
+        <Activities />
+      </section>
+
       <section id="gaushala">
         <Gaushala />
       </section>
@@ -38,11 +53,15 @@ const Home = () => {
 
       <section id="image-gallery">
         <ImageGallery />
-      </section>
+      </section> 
 
       <section id="facility">
         <Facility />
       </section>
+
+      {/* <section id="image-gallery">
+        <ImageGallery />
+      </section> */}
 
       <section id="facilities">
         <Facilities />
