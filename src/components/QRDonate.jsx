@@ -1,5 +1,3 @@
-// QRDonate.jsx
-
 import "./QRDonate.css";
 import QR from "../assets/qr.jpeg";
 
@@ -19,15 +17,21 @@ function QRDonate() {
             <div className="underline"></div>
           </div>
 
-          {/* Warning Text */}
+          {/* Warning Box */}
           <div className="warning-text">
-            <h2>
-              QR- कोड से दिए गए दान की रसीद नहीं मिलेगी।
-            </h2>
+            <h2>QR-कोड से दिए गए दान की रसीद नहीं मिलेगी।</h2>
 
             <p>
-              Donation through QR-code receipt will not generated.
+              Donation receipt will not be generated for payments made
+              through QR Code.
             </p>
+          </div>
+
+          {/* Scan Badge */}
+          <div className="badge-wrapper">
+            <div className="scan-badge">
+              📱 Scan QR to Donate
+            </div>
           </div>
 
           {/* QR Image */}
@@ -38,6 +42,11 @@ function QRDonate() {
               className="qr-image"
             />
           </div>
+
+          {/* Security Note */}
+          <p className="secure-note">
+            🔒 Secure UPI Payment
+          </p>
         </div>
       </div>
     </div>
