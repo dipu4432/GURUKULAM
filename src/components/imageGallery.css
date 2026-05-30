@@ -1,5 +1,5 @@
 .imageGallery-section {
-  padding: 80px 0;
+  padding: 30px 0;
   background: #f8f9fa;
 }
 
@@ -7,7 +7,7 @@
 
 .imageGallery-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .imageGallery-header h2 {
@@ -139,7 +139,7 @@
 
 @media (max-width: 576px) {
   .imageGallery-section {
-    padding: 60px 0;
+    padding: 10px 0;
   }
 
   .imageGallery-header {

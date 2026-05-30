@@ -52,7 +52,7 @@ function Facilities() {
   return (
     <section className="facilities-section">
       <Container>
-        <Row className="gy-5">
+        <Row className="gy-2">
           {/* LEFT SIDE */}
           <Col lg={6}>
             <div className="left-content">
