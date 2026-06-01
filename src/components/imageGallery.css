@@ -181,8 +181,8 @@
 
     font-size: 22px;
 
-    background: #f59e0b;
-    color: white;
+    background: white;
+    color: #333;
   }
 
   .imageGallery-btn:hover {
