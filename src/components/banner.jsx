@@ -2,8 +2,14 @@ import "./banner.css";
 import Button from "react-bootstrap/Button";
 import heroBg from "../assets/images/hero_bg.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Banner() {
+  useEffect(() => {
+    const preloadImage = new Image();
+    preloadImage.src = heroBg;
+  }, []);
+
   return (
     <>
       <section
