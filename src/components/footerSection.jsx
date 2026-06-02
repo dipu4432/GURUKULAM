@@ -37,7 +37,7 @@ function FooterSection() {
                 <div className="contact-item">
                   <FaMapMarkerAlt className="icon" />
                   <span>
-                    Shahar Chapra, Derni, Dariyapur, Saran, 841219 (Bihar)
+                    Shahar Chapra, Derni, Saran, 841219 (Bihar)
                   </span>
                 </div>
 
@@ -48,23 +48,23 @@ function FooterSection() {
 
                 <div className="contact-item">
                   <FaWhatsapp className="icon" />
-                  <span>9631783193</span>
+                  <span>8210009853</span>
                 </div> */}
                 <div className="contact-item">
                   <FaEnvelope className="icon" />
-                  <a href="mailto:dipukumarpojhi@gmail.com">
-                    dipukumarpojhi@gmail.com
+                  <a href="mailto:vasudhaivgurukulambharattrust@gmail.com">
+                    vasudhaivgurukulambharattrust@gmail.com
                   </a>
                 </div>
 
                 <div className="contact-item">
                   <FaWhatsapp className="icon" />
                   <a
-                    href="https://wa.me/919631783193"
+                    href="https://wa.me/918210009853"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    9631783193
+                    8210009853
                   </a>
                 </div>
 
@@ -82,21 +82,21 @@ function FooterSection() {
                 {/* Social Icons */}
                 <div className="social-icons">
                   <a
-                    href="https://www.google.com/?zx=1778749134554"
+                    href="https://www.facebook.com/"
                     className="facebook"
                   >
                     <FaFacebookF />
                   </a>
 
-                  <a href="/" className="twitter">
+                  <a href="https://x.com/" className="twitter">
                     <FaXTwitter />
                   </a>
 
-                  <a href="/" className="instagram">
+                  <a href="https://www.instagram.com/" className="instagram">
                     <FaInstagram />
                   </a>
 
-                  <a href="/" className="youtube">
+                  <a href="https://www.youtube.com/" className="youtube">
                     <FaYoutube />
                   </a>
                 </div>
@@ -115,19 +115,19 @@ function FooterSection() {
                 </p>
 
                 <p>
-                  <strong>A/C No. -</strong> 50200097954289
+                  <strong>A/C No. -</strong> 43887501032
                 </p>
 
                 <p>
-                  <strong>IFSC Code -</strong> HDFC0009596
+                  <strong>IFSC Code -</strong> SBIN0003267
                 </p>
 
                 <p>
-                  <strong>Branch Name -</strong> KESHAVPURAM, KANPUR (U.P.)
+                  <strong>Branch Name -</strong> PARSA (BIHAR)
                 </p>
 
                 <p>
-                  <strong>Bank Name -</strong> HDFC BANK
+                  <strong>Bank Name -</strong> SBI BANK
                 </p>
               </div>
             </Col>
