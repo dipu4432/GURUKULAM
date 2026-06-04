@@ -5,7 +5,7 @@ import { FaUserCircle, FaDownload } from "react-icons/fa";
 
 import member1 from "../assets/trust/Abhishek Kumar Sharma.png";
 import member2 from "../assets/trust/Bindu Devi Sharmaaaa.png";
-import member3 from "../assets/trust/Dinkar Dasssss.jpg";
+import member3 from "../assets/trust/Dinkarr Das.png";
 import member4 from "../assets/trust/Adv. Manoj Kumar.jpeg";
 
 import "./trustBoards.css";
