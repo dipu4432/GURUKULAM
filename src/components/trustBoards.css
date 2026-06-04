@@ -1,8 +1,10 @@
-/* trustBoards.css */
+/* =========================
+   TRUST SECTION
+========================= */
 
 .trust-section {
-  padding: 70px 0;
-  background: #fff;
+  padding: 80px 0;
+  background: #ffffff;
 }
 
 /* =========================
@@ -11,54 +13,175 @@
 
 .trust-header {
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .trust-header h2 {
+  display: inline-block;
+  position: relative;
   font-size: 2.5rem;
   font-weight: 700;
   color: #222;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-.trust-header p {
-  color: #888;
-  font-size: 0.95rem;
-}
-
-.trust-header span {
-  color: #d28b18;
-  font-weight: 600;
+.trust-header h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: #fe8d00;
+  border-radius: 10px;
 }
 
 /* =========================
-   CONTENT
+   TRUST CARD
 ========================= */
 
-.trust-content p {
-  color: #666;
-  line-height: 2;
-  font-size: 1rem;
-  margin-bottom: 28px;
+.trust-card {
+  background: linear-gradient(
+    180deg,
+    #fffaf5 0%,
+    #fff6ed 100%
+  );
+
+  border: 1px solid #ffe4c2;
+  border-radius: 20px;
+
+  overflow: hidden;
+  height: 100%;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
 }
 
-.trust-content strong {
-  color: #333;
+.trust-card:hover {
+  transform: translateY(-8px);
+  border-color: #fe8d00;
+  box-shadow: 0 15px 35px rgba(254, 141, 0, 0.18);
 }
 
 /* =========================
-   MEMBERS
+   IMAGE AREA
+========================= */
+
+.trust-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  background: #fff3e6;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.trust-card-img {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center top;
+
+  border: 5px solid #fff;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   FALLBACK ICON
+========================= */
+
+.trust-card-placeholder {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background: #f0f0f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #cfcfcf;
+  font-size: 6rem;
+
+  border: 5px solid #fff;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   CARD BODY
+========================= */
+
+.trust-card-body {
+  padding: 20px 25px 30px;
+}
+
+.trust-card-body h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.trust-card-body h6 {
+  display: inline-block;
+
+  background: rgba(254, 141, 0, 0.12);
+  color: #fe8d00;
+
+  padding: 7px 15px;
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+.trust-card-body p {
+  color: #666;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* =========================
+   OTHER MEMBERS
 ========================= */
 
 .trust-members {
-  margin-top: 45px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.trust-members h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
 }
 
 .trust-members p {
-  margin-bottom: 10px;
-  color: #555;
+  color: #666;
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 /* =========================
@@ -67,29 +190,49 @@
 
 .trust-pdf {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .pdf-btn {
-  display: inline-block;
-  background: #fe8d00;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #fe8d00,
+    #ff6b00
+  );
+
   color: #fff;
-  padding: 14px 28px;
-  border-radius: 6px;
   text-decoration: none;
+
+  font-size: 1rem;
   font-weight: 600;
-  transition: 0.3s ease;
-  border: none;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  box-shadow: 0 10px 25px rgba(254, 141, 0, 0.3);
+
+  transition: all 0.3s ease;
 }
 
 .pdf-btn:hover {
-  background: #e17c00;
   color: #fff;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 35px rgba(254, 141, 0, 0.45);
+}
+
+.pdf-btn:active {
+  transform: translateY(-1px);
 }
 
 /* =========================
-   TABLET VIEW
+   TABLET
 ========================= */
 
 @media (max-width: 991px) {
@@ -97,32 +240,23 @@
     padding: 60px 0;
   }
 
-  .trust-header {
-    margin-bottom: 45px;
-  }
-
   .trust-header h2 {
     font-size: 2.1rem;
   }
 
-  .trust-content p {
-    font-size: 0.97rem;
-    line-height: 1.9;
+  .trust-card-img,
+  .trust-card-placeholder {
+    width: 150px;
+    height: 150px;
   }
 
-  .trust-members {
-    margin-top: 35px;
-    margin-bottom: 40px;
-  }
-
-  .pdf-btn {
-    padding: 13px 24px;
-    font-size: 0.95rem;
+  .trust-card-placeholder {
+    font-size: 5rem;
   }
 }
 
 /* =========================
-   MOBILE VIEW
+   MOBILE
 ========================= */
 
 @media (max-width: 576px) {
@@ -131,41 +265,64 @@
   }
 
   .trust-header {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   .trust-header h2 {
     font-size: 1.9rem;
   }
 
-  .trust-header p {
+  .trust-header h2::after {
+    width: 55px;
+  }
+
+  .trust-card-img,
+  .trust-card-placeholder {
+    width: 130px;
+    height: 130px;
+  }
+
+  .trust-card-placeholder {
+    font-size: 4rem;
+  }
+
+  .trust-card-body {
+    padding: 18px;
+  }
+
+  .trust-card-body h4 {
+    font-size: 1.05rem;
+  }
+
+  .trust-card-body h6 {
     font-size: 0.85rem;
   }
 
-  .trust-content p {
-    font-size: 0.94rem;
-    line-height: 1.9;
-    margin-bottom: 22px;
+  .trust-card-body p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    text-align: center;
   }
 
   .trust-members {
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 50px;
+  }
+
+  .trust-members h4 {
+    font-size: 1.3rem;
   }
 
   .trust-members p {
     font-size: 0.95rem;
-    margin-bottom: 8px;
   }
 
   .trust-pdf {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .pdf-btn {
     width: 100%;
-    text-align: center;
-    padding: 14px 18px;
-    font-size: 0.92rem;
+    padding: 15px;
+    font-size: 0.95rem;
   }
 }
