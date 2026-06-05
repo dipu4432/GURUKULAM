@@ -6,7 +6,8 @@ import { FaUserCircle, FaDownload } from "react-icons/fa";
 import member1 from "../assets/trust/Abhishek Kumar Sharma.png";
 import member2 from "../assets/trust/Bindu Devi Sharmaaaa.png";
 import member3 from "../assets/trust/Dinkarr Das.png";
-import member4 from "../assets/trust/Adv. Manoj Kumar.jpeg";
+import member4 from "../assets/trust/Jynanesh Kumar.jpg";
+import member5 from "../assets/trust/Adv. Manoj Kumar.jpeg";
 
 import "./trustBoards.css";
 
@@ -34,14 +35,15 @@ function TrustBoards() {
         "Son of Ram Murat by faith Hindu, by caste Brahman, by occupation Social Worker, resident of Vill - Baisu Pali, Post - Janjwara, P.S - Haidarganj, Block - Tarun, District - Ayodhya, Uttar Pradesh.",
     },
     {
-      image: null,
+      // image: null,
+      image: member4,
       name: "ADV. JYNANESH KUMAR",
-      title: "Legal Advisor & Compliances of VGBCT",
+      title: "Legal Advisor & Compliances of VGBCT, Chapra civil court (9507262202) jynanesh.kr@gmail.com",
       details:
         "Son of Late Durgesh Tiwari by faith Hindu, by caste Brahman, by occupation Lawyer, resident of Vill - Jalal Basant, Post - Basant, P.S - Garkha, District - Saran, Bihar.",
     },
     {
-      image: member4,
+      image: member5,
       name: "ADV. MANOJ KUMAR",
       title: "Assistant Legal Advisor & Compliances of VGBCT",
       details:
