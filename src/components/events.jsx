@@ -18,9 +18,9 @@ function Events() {
   // Example:
   const upcomingEvents = [
     {
-      title: "Satsang Function",
-      date: "5 June 2026",
-      description: "Satsang function for all students."
+      title: "श्रीमद्भागवत कथा महोत्सव",
+      date: "15 June 2026",
+      description: "श्रीमद्भागवत कथा महोत्सव सभी छात्रों के लिए आयोजित किया जाएगा, जिसमें भागवत कथा का आयोजन किया जाएगा। यह महोत्सव धार्मिक और सांस्कृतिक कार्यक्रमों से भरपूर होगा।",
     }
   ];
 
@@ -32,25 +32,25 @@ function Events() {
     {
       day: "14",
       month: "MAY",
-      year: "2023",
-      date: "May 14, 2023",
-      title: "Mother's Day / Father Day",
+      year: "2026",
+      date: "May 14, 2026",
+      title: "रामायण पाठ एवं प्रवचन",
     },
 
     {
       day: "1",
       month: "MAY",
-      year: "2023",
-      date: "May 1, 2023 - June 4, 2023",
-      title: "Summer Vacation (01/05/2023 to 04/06/2023)",
+      year: "2026",
+      date: "May 1, 2026 - June 4, 2026",
+      title: "वैदिक हवन एवं यज्ञ (01/05/2026 to 04/06/2026)",
     },
 
     {
       day: "29",
       month: "APR",
-      year: "2023",
-      date: "April 29, 2023",
-      title: "Final Exam Result",
+      year: "2026",
+      date: "April 29, 2026",
+      title: "गौपूजन महोत्सव",
     },
   ];
 

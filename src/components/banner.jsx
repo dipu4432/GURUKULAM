@@ -54,7 +54,7 @@ function Banner() {
       <div className="marquee-container">
         <div className="marquee-track">
           <span>
-            🚩 गुरुकुलम् निर्माण हेतु सहयोग करें •
+            🚩 गुरुकुलम् को सहयोग करें •
             <Link to="/qr-donate" className="marquee-text-link">
               Donate Now
             </Link>
@@ -62,7 +62,7 @@ function Banner() {
           </span>
 
           <span>
-            📢 नया कार्यक्रम शुरू •
+            📢 श्रीमद्भागवत कथा महोत्सव शीघ्र प्रारंभ •
             <Link to="/events" className="marquee-text-link">
               View Events
             </Link>
@@ -80,7 +80,7 @@ function Banner() {
           {/* Duplicate for smooth infinite effect */}
 
           <span>
-            🚩 गुरुकुलम् निर्माण हेतु सहयोग करें •
+            🚩 गुरुकुलम् को सहयोग करें •
             <Link to="/qr-donate" className="marquee-text-link">
               Donate Now
             </Link>
@@ -88,7 +88,7 @@ function Banner() {
           </span>
 
           <span>
-            📢 नया कार्यक्रम शुरू •
+            📢 श्रीमद्भागवत कथा महोत्सव शीघ्र प्रारंभ •
             <Link to="/events" className="marquee-text-link">
               View Events
             </Link>

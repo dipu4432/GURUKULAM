@@ -19,7 +19,7 @@
   font-size: 2.7rem;
   font-weight: 700;
   color: #222;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .events-header p {
@@ -161,7 +161,8 @@
 .past-events h3 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   color: #222;
 }
 
